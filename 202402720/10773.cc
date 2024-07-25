@@ -3,31 +3,31 @@
 using namespace std;
 
 int main() {
-	int K;
-	cin >> K;
+    int K;
+    cin >> K;
 
-	stack<int> s;
+    stack<int> s;
 
-	while (K > 0) {
-		int num;
-		cin >> num;
+    while (K > 0) {
+        int num;
+        cin >> num;
 
-		if (num == 0) {
-			s.pop();
-		} else {
-			s.push(num);
-		}
-		K--;
-	}
+        if (num == 0) {
+            s.pop();
+        } else {
+            s.push(num);
+        }
+        K--;
+    }
 
-	int result = 0;
+    int result = 0;
 
-	while (!s.empty()) {
-		result += s.top();
-		s.pop();
-	}
+    while (!s.empty()) {
+        result += s.top();
+        s.pop();
+    }
 
-	cout << result << endl;
+    cout << result << endl;
 
-	return 0;
+    return 0;
 }
