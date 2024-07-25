@@ -11,7 +11,7 @@ void bfs(int node) {
 
 	check[node] = 1;
 
-	while (!q.empty()) {
+	while (q.size()) {
 		int num = q.front();
 		q.pop();
 
