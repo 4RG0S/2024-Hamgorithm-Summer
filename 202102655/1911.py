@@ -1,4 +1,4 @@
-# 1911번 - 흙길보수하기
+# 1911번 - 흙길 보수하기
 
 import sys
 input = sys.stdin.readline
